@@ -1,0 +1,92 @@
+/* import font to use on page */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* this is to make everything as boxes to make moving them easier */
+*,* ::before, *::after{
+    box-sizing: border-box;
+}
+
+/* this is for the colow of the body and measurments */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2f303a;
+    font-family: Poppins, sans-serif;
+    font-size: .85rem;
+    color: #7df9ff;
+    min-height: 100vh;
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+/* makes the logo picture and the Company name next to eachother and changed the color to white and gets rid of the underline.*/
+.brand_logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: inherit;
+}
+/* moves the company name away from the left */
+.brand_logo-name {
+    margin-left: 1rem;
+}
+/* the looks of the navigation tabs about, login*/
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* all of the navigations */
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+/* changes the color when your mouse hovers over the Navigation buttons */
+.main-nav a:hover {
+    color: #d3d3d3;
+}
+/* making everything into a header*/
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+/* the box containing logo -> login*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* first paragraph*/
+.title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+/* subtitle font size and margins*/
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+/* button stuff!*/
+.btn {
+    color: #7df9ff;
+    background-color: black;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+}
+/* crow logo in the top left hand corner*/
+.crow-logo{ 
+    height: 40px;
+    width: 40px;
+}

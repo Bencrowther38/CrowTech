@@ -1,0 +1,99 @@
+
+.about-page-square1 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: hsl(0, 1%, 43%, .1);
+    border-radius: 50%;
+    bottom: 5vw;
+    left: 5vw;
+    z-index: -1;
+}
+
+.about-page-square2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: hsl(0, 1%, 43%, .1);
+    border-radius: 50%;
+    bottom: 5vw;
+    right: 5vw;
+    z-index: -1;
+}
+
+.about-page-square3 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-color: hsl(0, 1%, 43%, .1);
+    border-radius: 50%;
+    top: 10vw;
+    left : 35vw;
+    z-index: -1;
+    border-color: aqua;
+    border-width: 1rem;
+}
+.mainbody {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* first paragraph*/
+.Title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+/* subtitle font size and margins*/
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+/*---------------------------------------------------*/
+/* puts all the items together*/
+.about-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+/*manages the image on the left to auto size (parent function)*/
+.about-section .my-image {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+/* more edits to the parent function*/
+.about-section .image-left {
+    background-image: url(Images/ME.jpeg);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+/* Brings everything together on the main page*/
+.about-section .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+    max-width: 50vh;
+}
+/* Makes the image dissapear when the webrowser is small enough*/
+@media (max-width: 900px){
+    .about-section .my-image {
+        display: none;
+    }
+
+    .about-section {
+        justify-content: center;
+    }
+}
