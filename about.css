@@ -70,7 +70,7 @@
 }
 /* more edits to the parent function*/
 .about-section .image-left {
-    background-image: url(Images/ME.jpeg);
+    background-image: url(ME.jpeg);
     flex-grow: 1;
     max-height: 70vh;
     min-width: 30vh;
